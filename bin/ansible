@@ -96,6 +96,9 @@ if __name__ == '__main__':
         cli.parse()
         exit_code = cli.run()
 
+
+
+
     except AnsibleOptionsError as e:
         cli.parser.print_help()
         display.error(to_unicode(e), wrap_text=False)
